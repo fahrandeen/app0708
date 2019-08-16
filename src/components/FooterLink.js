@@ -1,14 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
-export default (props) => (
+export default (match) => (
     <div>
         <table className="table table-hover">
             <thead>
                 <tr>
-                    <th><Link to='/'>All</Link></th>
-                    <th><Link to='/active'>Active</Link></th>
-                    <th><Link to='/notActive'>In-Active</Link></th>
+                    <th><NavLink to='/stockist/all'>All</NavLink></th>
+                    <th><NavLink to='/stockist/active'>Active</NavLink></th>
+                    <th><NavLink to='/stockist/notActive'>In-Active</NavLink></th>
                 </tr>
             </thead>
         </table>

@@ -36,9 +36,9 @@ class Stockist extends Component {
 
     componentDidMount() {
         // using redux to fetch
-        setInterval(() => {
+         setInterval(() => {
             this.props.fetchStockists()
-        }, 1000);
+         }, 1000);
 
 
         // fetch('http://demo5787785.mockable.io/stockists')

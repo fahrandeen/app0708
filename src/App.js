@@ -15,13 +15,11 @@ class App extends Component {
         <div>
           <Header />
           <Menu />
-          <Route path="/stockist" component={Stockist} />
-          <Route path = '/stockistnew' component={StockistNew} />
           <Route path = '/test' component={Test} />
-          <Route path='/stockist/:filter?' render={({match}) =>(
-            <Stockist   component={Stockist} filter={match.params.filter}/>
-          )}>
-          </Route>
+          <Route path = '/stockistnew' component={StockistNew} />
+          <Route path="/stockist/:filter" render={({match}) =>(
+            <Stockist filter={match.params.filter}/>
+          )}/>
           <Footer />
         </div>
       </Router>

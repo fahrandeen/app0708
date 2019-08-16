@@ -33,6 +33,7 @@ export const toggleStockist = (id) => {
 }
 
 export const getVisibleStockist = (stockists, filter) => {
+    console.log(filter)
     switch (filter) {
         case 'active':
             return stockists.filter(t => t.isActive)

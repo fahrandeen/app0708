@@ -78,9 +78,9 @@ export default class Menu extends Component {
                   </span>
                 </a>
                 <ul className="treeview-menu">
-                  <li><NavLink to="/stockist"><i className="fa fa-circle-o" /> Stockist Details</NavLink></li>
+                  <li><NavLink to="/test"><i className="fa fa-circle-o" /> Test</NavLink></li>
                   <li><NavLink to="/stockistnew"><i className="fa fa-circle-o" /> Add New Stockist</NavLink></li>
-                  <li><NavLink to="/test"><i className="fa fa-circle-o" /> Add New Stockist</NavLink></li>
+                  <li><NavLink to="/stockist/all"><i className="fa fa-circle-o" /> Stockist Details</NavLink></li>
                   {/* <li><a href="pages/charts/flot.html"><i className="fa fa-circle-o" /> Flot</a></li>
             <li><a href="pages/charts/inline.html"><i className="fa fa-circle-o" /> Inline charts</a></li> */}
                 </ul>
